@@ -1,0 +1,153 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>用户注册</title>  
+  <style>  
+    body {  
+      font-family: Arial, sans-serif;  
+    }  
+    .container {  
+      max-width: 400px;  
+      margin: 0 auto;  
+      padding: 20px;  
+    }  
+    h2 {  
+      text-align: center;  
+    }  
+    .form-group {  
+      margin-bottom: 20px;  
+    }  
+    .form-group label {  
+      display: block;  
+      font-weight: bold;  
+      margin-bottom: 5px;  
+    }  
+    .form-group input {  
+      width: 100%;  
+      padding: 8px;  
+      border: 1px solid #ccc;  
+      border-radius: 4px;  
+    }  
+    .form-group select {  
+      width: 100%;  
+      padding: 8px;  
+      border: 1px solid #ccc;  
+      border-radius: 4px;  
+    }  
+    .form-group input[type="submit"] {  
+      background-color: #4CAF50;  
+      color: white;  
+      cursor: pointer;  
+    }  
+    .form-group input[type="file"] {  
+      display: block;  
+      margin-top: 5px;  
+    }  
+  </style>  
+</head>  
+<body>  
+  <div class="container">  
+    <h2>用户注册</h2>  
+    <form action="/register" method="post" enctype="multipart/form-data">  
+      <div class="form-group">  
+        <label for="username">用户名:</label>  
+        <input type="text" id="username" name="username" required>  
+      </div>  
+      <div class="form-group">  
+        <label for="previous_name">曾用名:</label>  
+        <input type="text" id="previous_name" name="previous_name">  
+      </div>  
+      <div class="form-group">  
+        <label for="password">密码:</label>  
+        <input type="password" id="password" name="password" required>  
+      </div>  
+      <div class="form-group">  
+        <label for="confirm_password">确认密码:</label>  
+        <input type="password" id="confirm_password" name="confirm_password" required>  
+      </div>  
+      <div class="form-group">  
+        <label for="gender">性别:</label>  
+        <select id="gender" name="gender">  
+          <option value="">请选择</option>  
+          <option value="male">男性</option>  
+          <option value="female">女性</option>  
+          <option value="other">其他</option>  
+        </select>  
+      </div>  
+      <div class="form-group">  
+        <label for="hobbies">爱好:</label>  
+        <input type="text" id="hobbies" name="hobbies">  
+      </div>  
+      <div class="form-group">  
+        <label for="display_file">展示文件:</label>  
+        <input type="file" id="display_file" name="display_file">  
+      </div>  
+      <div class="form-group">  
+        <label for="image_button">图片按钮:</label>  
+        <input type="file" id="image_button" name="image_button">  
+      </div>  
+      <div class="form-group">  
+        <label for="favorite_color">喜欢的颜色:</label>  
+        <input type="text" id="favorite_color" name="favorite_color">  
+      </div>  
+      <div class="form-group">  
+        <label for="favorite_number">喜欢的数字(0-9):</label>  
+        <input type="number" id="favorite_number" name="favorite_number" min="0" max="9">  
+      </div>  
+      <div class="form-group">  
+        <label for="height">身高的选择:</label>  
+        <input type="text" id="height" name="height">  
+      </div>  
+      <div class="form-group">  
+        <label for="contact_phone">联系电话:</label>
+        <input type="text" id="contact_phone" name="contact_phone">
+        </div>
+        <div class="form-group">
+        <label for="email">电子邮件:</label>
+        <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+        <label for="favorite_website">你喜欢的网站:</label>
+        <input type="url" id="favorite_website" name="favorite_website" required>
+        </div>
+        <div class="form-group">
+            <label for="favorite_website">你的搜索:</label>
+            <input type="url" id="favorite_website" name="favorite_website" required>
+            </div>
+
+        <div class="form-group">
+        <label for="search_birthdate">出生日期:</label>
+        <input type="date" id="search_birthdate" name="search_birthdate">
+        </div>
+        <div class="form-group">
+        <label for="birth_year">出生年月:</label>
+        <input type="month" id="search_birthdate" name="search_birthdate">
+        </div>
+        <div class="form-group">
+            <label for="birth_hour">出生日期时间:</label>
+            <input type="datetime-local" id="search_birthdate" name="search_birthdate">
+            </div>
+        <div class="form-group">
+        <label for="birth_month">出生周:</label>
+        <input type="week" id="search_birthdate" name="search_birthdate">
+        </div>
+        <div class="form-group">
+        <label for="birth_week">出生时刻:</label>
+        <input type="time" id="search_birthdate" name="search_birthdate">
+        </div>
+    
+        <div class="form-group">
+        <label for="highest_education">最高学历:</label>
+        <input type="text" id="highest_education" name="highest_education">
+        </div>
+        <div class="form-group">
+        <label for="career_message">职业留言:</label>
+        <textarea id="career_message" name="career_message" style="width: 420px;height:60px; place-content: 请输入您的留言信息;"></textarea>
+        </div>
+        <div class="form-group">
+        <input type="submit" value="提交">
+        <input type="reset" value="重写">
+        </div>
+        </form>
+        
+        </div> </body> </html>
