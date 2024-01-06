@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#body{
+    width: 1220px;
+    height: 650px;
+    background:linear-gradient(to right, rgb(247,209,215),rgb(191,227,241));
+    position: relative;
+}
